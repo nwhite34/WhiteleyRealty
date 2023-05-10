@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Whiteley Realty</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+/>
+</head>
+<header>
+      
+<div class="logo"> <img src="logo2.png" alt="logo" class="logo" onclick="window.location.href='index.html'"></div>
+
+<div class="container">
+<h1 class="logo"></h1>     
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="interest.html">Expression of Interest</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<body>
+<div class="body2div">
+<div class="contact-banner">
+<h1>Contact Us</h1>
+<p class="contact-description">
+ We'd really love to hear from you! Please fill in the form below and
+submit!
+</p>
+</div>
+
+<form name="contact-form">
+<div class="form-control">
+<label>Full Name</label>
+<input name="name" id="text1" type = "text"
+placeholder="First and Last Name" />
+<div class="error hide">Name is required</div>
+</div>
+
+<div class="form-control">
+<label>Email</label>
+<input
+name="email"
+placeholder="e.g. your_email@example.com"
+/>
+<div class="error hide">Email is invalid</div>
+</div>
+
+<div class="form-control">
+<label>Message</label>
+<textarea name="message"></textarea>
+<div class="error hide">Message is required</div>
+</div>
+
+     
+<div id="frame001">
+<h2>Human Verification Test</h2>
+<text>Attempt: </text><text id="number001">0</text><text> / 1</text>
+<hr />
+<p id="message001"></p>
+<p id="message002"></p>
+<p id="show001"></p>
+<p id="message003"></p>
+<p id="message004"></p>
+<div id="disappear001">
+<button onclick="begin001()">Begin</button>
+</div>
+</div>
+<hr />
+
+<button type="reset" id="reset" >RESET FORM</button>  
+</form>
+</div>
+
+<div class="footer">
+<p> Website designed by Nicholas Whiteley for Web Dev 2, assignment 1. </p>
+<p> © 2022 Whiteley Realty </p>
+</div>
+
+<script src="script3.js"></script>
+<script>window.onload = generateCalculation()</script>
+
+</body>
+</html>
+</html>

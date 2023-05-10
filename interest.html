@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+
+<link href="styles.css" rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+
+<title>Whiteley Realty</title>
+<script defer src="script2.js"></script>
+
+</head>
+<body>
+<div class="body3div">
+
+<header>
+
+<div class="logo"> <img src="logo2.png" alt="logo" class="logo" onclick="window.location.href='index.html'"></div>
+<div class="container">
+<h1 class="logo"></h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="interest.html">Expression of Interest</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+<h4 style="color:rgb(0, 0, 0)">Expression of Interest</h4>
+<p>
+ We'd really love to hear from you! Please fill in the form below and
+submit!
+</p>
+
+<form name="form">
+<div class="form-control">
+<label>Full Name</label>
+<input name="name"
+placeholder="First and Last Name" />
+<div class="error hide">Name is required!</div>
+</div>
+
+<div class="form-control">
+<label>Phone Number</label>
+<input
+name="phone"
+placeholder="12345678910"
+/>
+<div class="error hide">Phone is invalid! Numeric characters only and must be 10 Digits!</div>
+</div>
+
+<div class="form-control">
+<label>Address of the Property</label>
+<input name="address"
+placeholder="Address"/>
+<div class="error hide">Address is required!</div>
+</div>
+
+<div class="form-control">
+<label>Offering Price</label>
+<input name="offer" min="0" input type="number" min="0" oninput="this.value = 
+!!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null" placeholder="Enter price"/>>
+<div class="error hide">Offering Price is required!!</div>
+</div>
+
+
+<hr/>
+<button type="reset">RESET FORM</button>
+<button type="submit" >SUBMIT FORM</button>
+
+</form>
+
+</div>
+
+<div class="footer">
+  <p> Website designed by Nicholas Whiteley for Web Dev 2, assignment 1. </p>
+  <p> © 2022 Whiteley Realty </p>
+  </div>
+</div>
+
+</body>
+</html>
